@@ -11,8 +11,12 @@ import org.springframework.web.servlet.view.RedirectView;
 
 import java.net.URI;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
+
+@CrossOrigin(origins = "http://localhost:3000")
 @RestController
 public class UrlController {
+    // your existing endpoints
 
   private final UrlService service;
 
